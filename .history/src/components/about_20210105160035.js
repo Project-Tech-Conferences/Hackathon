@@ -7,6 +7,7 @@ const About = () => {
     <div className="section" id="about">
       <div className="container">
         <div className="about-section">
+          {/* <div className="content"> */}
           <Fade bottom cascade>
             <h1>Code for Covid</h1>
           </Fade>
