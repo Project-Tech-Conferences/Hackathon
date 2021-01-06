@@ -90,10 +90,7 @@ const Countdown = () => {
                     minutes
                   </div>
                   <div className="seconds">{timeLeft.seconds}</div>
-                  <div
-                    className="time-left"
-                    style={{ color: "rgb(124, 114, 232)" }}
-                  >
+                  <div className="time-left" style={{ color: "#ff6830" }}>
                     seconds
                   </div>
                 </>

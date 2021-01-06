@@ -78,22 +78,23 @@ const Countdown = () => {
                     weeks
                   </div>
                   <div className="days">{timeLeft.days}</div>
-                  <div className="time-left" style={{ color: "#ff8b0f" }}>
+                  <div className="time-left" style={{ color: "#ff6830" }}>
+                    {" "}
                     days
                   </div>
                   <div className="hours">{timeLeft.hours}</div>
-                  <div className="time-left" style={{ color: "#92af63" }}>
+                  <div className="time-left" style={{ color: "#ff6830" }}>
+                    {" "}
                     hours
                   </div>
                   <div className="minutes">{timeLeft.minutes}</div>
-                  <div className="time-left" style={{ color: "#3d9be9" }}>
+                  <div className="time-left" style={{ color: "#ff6830" }}>
+                    {" "}
                     minutes
                   </div>
                   <div className="seconds">{timeLeft.seconds}</div>
-                  <div
-                    className="time-left"
-                    style={{ color: "rgb(124, 114, 232)" }}
-                  >
+                  <div className="time-left" style={{ color: "#ff6830" }}>
+                    {" "}
                     seconds
                   </div>
                 </>

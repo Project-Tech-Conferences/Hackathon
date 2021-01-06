@@ -71,35 +71,37 @@ const Countdown = () => {
           <Fade bottom cascade>
             <h1>Coming</h1>
             <div className="countdown">
+              {/* {timerComponents.length ? (
+                timerComponents
+              ) : (
+                <span>Time's up!</span>
+              )} */}
               {timerComponents.length ? (
                 <>
+                  {/* <h2 className="months">
+                    {timeLeft.months}
+                    <div className="time-left"> months</div>
+                  </h2> */}
                   <div className="weeks">{timeLeft.weeks}</div>
-                  <div className="time-left" style={{ color: "#ff6830" }}>
-                    weeks
-                  </div>
+                  <div className="time-left"> weeks</div>
                   <div className="days">{timeLeft.days}</div>
-                  <div className="time-left" style={{ color: "#ff8b0f" }}>
-                    days
-                  </div>
+                  <div className="time-left"> days</div>
                   <div className="hours">{timeLeft.hours}</div>
-                  <div className="time-left" style={{ color: "#92af63" }}>
-                    hours
-                  </div>
-                  <div className="minutes">{timeLeft.minutes}</div>
-                  <div className="time-left" style={{ color: "#3d9be9" }}>
-                    minutes
-                  </div>
-                  <div className="seconds">{timeLeft.seconds}</div>
-                  <div
-                    className="time-left"
-                    style={{ color: "rgb(124, 114, 232)" }}
-                  >
-                    seconds
-                  </div>
+                  <div className="time-left"> hours</div>
+                  <h2 className="minutes">{timeLeft.minutes}</h2>
+                  <div className="time-left"> minutes</div>
+                  <h2 className="seconds">{timeLeft.seconds}</h2>
+                  <div className="time-left"> seconds</div>
                 </>
               ) : (
                 <span className="timer-done">PTC Hacks has begun!</span>
               )}
+              {/* <h2 className="months">{timeLeft.months} months </h2>
+              <h2 className="weeks">{timeLeft.weeks} weeks</h2>
+              <h2 className="days">{timeLeft.days} days</h2>
+              <h2 className="hours">{timeLeft.hours} hours </h2>
+              <h2 className="minutes">{timeLeft.minutes} minutes </h2>
+              <h2 className="seconds">{timeLeft.seconds} seconds </h2> */}
             </div>
             <h1>Soon</h1>
           </Fade>

@@ -77,11 +77,14 @@
     .seconds {
       max-width: 80%;
       color: rgb(124, 114, 232);
+      // font-size: 2vw;
       display: flex;
       flex-direction: row;
-
+      // margin: 0 20px;
+      // padding: 0 20px;
     }
     .time-left {
+      // margin: 0 2vw;
       font-size: 1.5vw;
       align-self: center;
       justify-self: start;

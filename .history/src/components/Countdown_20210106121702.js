@@ -74,28 +74,17 @@ const Countdown = () => {
               {timerComponents.length ? (
                 <>
                   <div className="weeks">{timeLeft.weeks}</div>
-                  <div className="time-left" style={{ color: "#ff6830" }}>
+                  <div className="time-left" style={{ color: "#ff8b0f" }}>
                     weeks
                   </div>
                   <div className="days">{timeLeft.days}</div>
-                  <div className="time-left" style={{ color: "#ff8b0f" }}>
-                    days
-                  </div>
+                  <div className="time-left"> days</div>
                   <div className="hours">{timeLeft.hours}</div>
-                  <div className="time-left" style={{ color: "#92af63" }}>
-                    hours
-                  </div>
+                  <div className="time-left"> hours</div>
                   <div className="minutes">{timeLeft.minutes}</div>
-                  <div className="time-left" style={{ color: "#3d9be9" }}>
-                    minutes
-                  </div>
+                  <div className="time-left"> minutes</div>
                   <div className="seconds">{timeLeft.seconds}</div>
-                  <div
-                    className="time-left"
-                    style={{ color: "rgb(124, 114, 232)" }}
-                  >
-                    seconds
-                  </div>
+                  <div className="time-left"> seconds</div>
                 </>
               ) : (
                 <span className="timer-done">PTC Hacks has begun!</span>
