@@ -11,40 +11,15 @@
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  text-align: center;
+  // text-align: center;
   justify-content: center;
-  @include media(">=phone", "<lgphone") {
-    height: 60vh;
-    gap: 10vw;
-  }
-  @include media(">=lgphone", "<tablet") {
-    height: 60vh;
-  }
-  @include media(">=tablet", "<desktop") {
-    height: 60vh;
-    gap: 10vw;
-  }
   h1 {
     color: #ff8b0f;
     font-family: LuloCleanW01-OneBold;
     font-size: 5.5vw;
     margin: -2vw;
+    // padding: -5px 10px;
     transform: rotate(-90deg);
-    @include media(">=phone", "<lgphone") {
-      margin: 0 -5vw;
-      font-size: 7.5vw;
-    }
-    @include media(">=lgphone", "<tablet") {
-      // width: 100vw;
-      margin: 0 -5vw;
-      font-size: 7.5vw;
-      // padding: 7vw;
-    }
-    @include media(">=tablet", "<desktop") {
-      // width: 100vw;
-      margin: 0 -5vw;
-      font-size: 7.5vw;
-    }
   }
   .countdown {
     font-family: LuloCleanW01-OneBold;
@@ -58,19 +33,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 5vw;
-    @include media(">=phone", "<lgphone") {
-      // height: 60vh;
-      font-size: 12vw;
-    }
-    @include media(">=lgphone", "<tablet") {
-      // height: 60vh;
-      // font-size: 12vw;
-    }
-    @include media(">=tablet", "<desktop") {
-      // height: 60vh;
-      // font-size: 12vw;
-    }
 
+    h2 {
+      margin: 0 2vw;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-end: 0;
+      margin-inline-start: 0;
+    }
     .months {
       color: #ff6830;
       display: flex;
@@ -112,18 +82,6 @@
       font-size: 1.5vw;
       align-self: center;
       justify-self: start;
-      @include media(">=phone", "<lgphone") {
-        // height: 60vh;
-        font-size: 3vw;
-      }
-      @include media(">=lgphone", "<tablet") {
-        // height: 60vh;
-        font-size: 3vw;
-      }
-      @include media(">=tablet", "<desktop") {
-        // height: 60vh;
-        font-size: 3vw;
-      }
     }
   }
 }

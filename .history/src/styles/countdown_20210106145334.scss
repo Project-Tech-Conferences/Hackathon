@@ -43,7 +43,7 @@
     @include media(">=tablet", "<desktop") {
       // width: 100vw;
       margin: 0 -5vw;
-      font-size: 7.5vw;
+      font-size: 7vw;
     }
   }
   .countdown {
@@ -64,11 +64,9 @@
     }
     @include media(">=lgphone", "<tablet") {
       // height: 60vh;
-      // font-size: 12vw;
     }
     @include media(">=tablet", "<desktop") {
       // height: 60vh;
-      // font-size: 12vw;
     }
 
     .months {
@@ -118,11 +116,9 @@
       }
       @include media(">=lgphone", "<tablet") {
         // height: 60vh;
-        font-size: 3vw;
       }
       @include media(">=tablet", "<desktop") {
         // height: 60vh;
-        font-size: 3vw;
       }
     }
   }

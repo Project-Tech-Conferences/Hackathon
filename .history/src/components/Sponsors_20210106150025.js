@@ -6,11 +6,11 @@ const Sponsors = () => {
   return (
     <div className="section">
       <div className="container">
-        <div className="aa-container">
+        <div className="12-container">
           <Fade bottom cascade>
             <h1>Sponsors</h1>
           </Fade>
-
+          <p>{data.promotionPara}</p>
         </div>
       </div>
     </div>

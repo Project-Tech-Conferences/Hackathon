@@ -16,13 +16,17 @@
   @include media(">=phone", "<lgphone") {
     height: 60vh;
     gap: 10vw;
+    // margin: -12px 0 0 -12px;
+    // margin: 5vw;
+    // width: 100vw;
+    // height: 100vh;
   }
   @include media(">=lgphone", "<tablet") {
     height: 60vh;
+    // margin: 5vh;
   }
   @include media(">=tablet", "<desktop") {
     height: 60vh;
-    gap: 10vw;
   }
   h1 {
     color: #ff8b0f;
@@ -31,19 +35,21 @@
     margin: -2vw;
     transform: rotate(-90deg);
     @include media(">=phone", "<lgphone") {
+      // width: 100vw;
+      // height: 100vh;
+      // margin: 5vw;
       margin: 0 -5vw;
+      // padding: 5vw;
       font-size: 7.5vw;
     }
     @include media(">=lgphone", "<tablet") {
       // width: 100vw;
-      margin: 0 -5vw;
-      font-size: 7.5vw;
-      // padding: 7vw;
+      font-size: 7vh;
+      padding: 7vw;
     }
     @include media(">=tablet", "<desktop") {
       // width: 100vw;
-      margin: 0 -5vw;
-      font-size: 7.5vw;
+      font-size: 7vw;
     }
   }
   .countdown {
@@ -64,11 +70,9 @@
     }
     @include media(">=lgphone", "<tablet") {
       // height: 60vh;
-      // font-size: 12vw;
     }
     @include media(">=tablet", "<desktop") {
       // height: 60vh;
-      // font-size: 12vw;
     }
 
     .months {
@@ -118,11 +122,9 @@
       }
       @include media(">=lgphone", "<tablet") {
         // height: 60vh;
-        font-size: 3vw;
       }
       @include media(">=tablet", "<desktop") {
         // height: 60vh;
-        font-size: 3vw;
       }
     }
   }

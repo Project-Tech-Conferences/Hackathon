@@ -64,11 +64,11 @@
     }
     @include media(">=lgphone", "<tablet") {
       // height: 60vh;
-      // font-size: 12vw;
+      font-size: 12vw;
     }
     @include media(">=tablet", "<desktop") {
       // height: 60vh;
-      // font-size: 12vw;
+      font-size: 12vw;
     }
 
     .months {
@@ -118,11 +118,9 @@
       }
       @include media(">=lgphone", "<tablet") {
         // height: 60vh;
-        font-size: 3vw;
       }
       @include media(">=tablet", "<desktop") {
         // height: 60vh;
-        font-size: 3vw;
       }
     }
   }

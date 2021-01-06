@@ -10,7 +10,7 @@ const Sponsors = () => {
           <Fade bottom cascade>
             <h1>Sponsors</h1>
           </Fade>
-
+          <p>{data.promotionPara}</p>
         </div>
       </div>
     </div>

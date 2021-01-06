@@ -68,7 +68,7 @@
     }
     @include media(">=tablet", "<desktop") {
       // height: 60vh;
-      // font-size: 12vw;
+      font-size: 12vw;
     }
 
     .months {
