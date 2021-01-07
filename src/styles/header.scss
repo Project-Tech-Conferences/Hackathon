@@ -3,54 +3,78 @@
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-image: url(../images/hackathon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:100vw;
+  height:55vw;
 
-  h2 {
-    font-size: 1rem;
-    text-align: center;
-    @include media(">=phone", "<lgphone") {
-      font-size: 14px;
-    }
-    @include media(">=lgphone", "<tablet") {
-      font-size: 16px;
-    }
-    @include media(">=tablet", "<desktop") {
-      font-size: 16px;
-    }
-  }
+
   .heading-wrapper {
+    margin-left: auto;
+    margin-right:auto;
+    width: 80vw;
     h1 {
-      font-size: 4rem;
-      text-align: center;
+      font-size: 6vw;
+      text-align: left;
       line-height: 20px;
+      font-family: LuloCleanW01-OneBold;
       @include media(">=phone", "<lgphone") {
-        font-size: 1.5rem;
         line-height: 10px;
       }
       @include media(">=lgphone", "<tablet") {
-        font-size: 1.5rem;
         line-height: 10px;
       }
       @include media(">=tablet", "<desktop") {
-        font-size: 2.5rem;
+        font-size: 6vw;
+      }
+    }
+    h2 {
+      font-size: 2vw;
+      text-align: left;
+      line-height: 20px;
+      font-family: LuloCleanW01-OneBold;
+      @include media(">=phone", "<lgphone") {
+        line-height: 10px;
+      }
+      @include media(">=lgphone", "<tablet") {
+        line-height: 10px;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 2vw;
+      }
+    }
+    h3 {
+      font-size: 2vw;
+      text-align: left;
+      line-height: 20px;
+      font-family: nunito;
+      font-style: italic;
+      @include media(">=phone", "<lgphone") {
+        line-height: 10px;
+      }
+      @include media(">=lgphone", "<tablet") {
+        line-height: 10px;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 2vw;
       }
     }
   }
-  p {
-    width: 50%;
-    text-align: center;
-    overflow: hidden;
-    @include media(">=phone", "<lgphone") {
-      font-size: 12px;
-      width: 100%;
-    }
-    @include media(">=lgphone", "<tablet") {
-      font-size: 12px;
-      width: 100%;
-    }
-    @include media(">=tablet", "<desktop") {
-      font-size: 14px;
-      width: 100%;
-    }
+
+  a {
+      font-size: 2vw;
+      text-align: left;
+      line-height: 50px;
+      font-family: Nunito;
+      font-style: bold;
+      background-color: rgb(247,72,74);
+      padding-left: 4vw;
+      padding-right: 4vw;
+      margin-left: 0;
+  }
+  a:hover{
+    background-color: rgb(63, 86, 90);
+    color: black;
   }
 }
