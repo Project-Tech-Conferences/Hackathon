@@ -1,0 +1,61 @@
+@import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+.aa-container {
+  max-width: 100%;
+  width: 50vw;
+  padding: 0;
+  margin-top: 6vw;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  @include media(">=phone", "<lgphone") {
+    height: 60vh;
+    gap: 10vw;
+  }
+  @include media(">=lgphone", "<tablet") {
+    height: 60vh;
+  }
+  @include media(">=tablet", "<desktop") {
+    height: 60vh;
+    gap: 10vw;
+  }
+  .image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "1 a 2 b 3"
+      "c 4 d 5 e"
+    ;
+    // grid-auto-flow: column;
+    .image {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  h1 {
+    color: #1b9cf7;
+    align-self: flex-start;
+    font-family: LuloCleanW01-OneBold;
+    font-size: 4.5vw;
+    margin: -2vw;
+    @include media(">=phone", "<lgphone") {
+      margin: 0 -5vw;
+      font-size: 7.5vw;
+    }
+    @include media(">=lgphone", "<tablet") {
+      // width: 100vw;
+      margin: 0 -5vw;
+      font-size: 7.5vw;
+      // padding: 7vw;
+    }
+    @include media(">=tablet", "<desktop") {
+      // width: 100vw;
+      margin: 0 -5vw;
+      font-size: 7.5vw;
+    }
+  }
+}
