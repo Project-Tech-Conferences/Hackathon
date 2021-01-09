@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap')
+
+.schedule-header{
+    color: #FF4040;
+    font-family: LuloCleanW01-OneBold;
+    font-weight: normal;
+    font-size: 8vw;
+    width: 80vw;
+    text-align: left;
+}
+
+.day{
+    display:block;
+}
+
+.friday{
+    font-family: LuloCleanW01-OneBold;
+    padding-bottom: 10px;
+
+    .friday-date{
+        color: #FF6830;
+        font-size: 4vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .friday-schedule{
+        background-color: #FF6830;
+        color: #FFFFFF;
+        width: 550px;
+        padding: 5%;
+        font-family: barlow;
+        font-size: 2vw; 
+        line-height: 6vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3vw;
+        //grid-template-rows: 1fr;
+
+        .friday-time{
+            font-weight: bold;
+        }
+    }
+}
+
+.saturday{
+    font-family: LuloCleanW01-OneBold;
+    float: right;
+    padding-bottom: 10px;
+
+    .saturday-date{
+        color: #FF8B0F;
+        font-size: 4vw;
+        margin-bottom: 0.5vw;
+        text-align: right;
+    }
+
+    .saturday-schedule{
+        background-color: #FF8B0F;
+        color: #FFFFFF;
+        width: 550px;
+        padding: 5%;
+        padding-right:0;
+        font-family: barlow;
+        font-size: 2vw; 
+        line-height: 6vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        //grid-template-rows: 1fr;
+        column-gap: 3vw;
+    }
+}
+
+
+.sunday{
+    font-family: LuloCleanW01-OneBold;
+
+    .sunday-date{
+        color: #92AF63;
+        font-size: 4vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .sunday-schedule{
+        background-color: #92AF63;
+        color: #FFFFFF;
+        width: 550px;
+        padding: 5%;
+        font-family: barlow;
+        font-size: 2vw; 
+        line-height: 6vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3vw;
+        //grid-template-rows: 1fr;
+        //column-gap: 10px;
+    }
+}
