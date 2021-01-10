@@ -1,7 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 //import data from "../yourdata"
-import style from "../styles/schedule.scss"
+//import style from "../styles/schedule.scss"
 
 const Schedule = () => {
   return (
@@ -55,7 +55,7 @@ const Schedule = () => {
 
           <Fade left>
             <div className='sunday day'>
-              <h2 className='sunday-date'>FEBRUARY 21TH</h2>
+              <h2 className='sunday-date'>FEBRUARY 21ST</h2>
               <div className="sunday-schedule">
                   <div className="sunday-time">7:30 am</div>
                   <div>Day opening ceremony</div>
