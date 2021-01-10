@@ -14,50 +14,42 @@
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
+
     h1 {
-      font-size: 6vw;
+      font-size: 6.8vw;
       text-align: left;
       line-height: 20px;
       font-family: LuloCleanW01-OneBold;
-      @include media(">=phone", "<lgphone") {
+      @include media(">=phone", "<tablet") {
         line-height: 10px;
-      }
-      @include media(">=lgphone", "<tablet") {
-        line-height: 10px;
-      }
-      @include media(">=tablet", "<desktop") {
-        font-size: 6vw;
       }
     }
+
     h2 {
-      font-size: 2vw;
+      font-size: 3vw;
       text-align: left;
       line-height: 20px;
       font-family: LuloCleanW01-OneBold;
-      @include media(">=phone", "<lgphone") {
+      @include media(">=phone", "<tablet") {
         line-height: 10px;
       }
-      @include media(">=lgphone", "<tablet") {
-        line-height: 10px;
-      }
-      @include media(">=tablet", "<desktop") {
-        font-size: 2vw;
+      @media only screen and (max-width:762px){
+        margin: 1vw;
       }
     }
+
     h3 {
-      font-size: 2vw;
+      font-size: 2.5vw;
       text-align: left;
-      line-height: 20px;
+      line-height: 10px;
       font-family: nunito;
       font-style: italic;
-      @include media(">=phone", "<lgphone") {
+      @include media(">=phone") {
         line-height: 10px;
+        //font-size: 3vw;
       }
-      @include media(">=lgphone", "<tablet") {
-        line-height: 10px;
-      }
-      @include media(">=tablet", "<desktop") {
-        font-size: 2vw;
+      @media only screen and (max-width:762px){
+        font-size: 3vw;
       }
     }
   }
@@ -71,7 +63,13 @@
       background-color: rgb(247,72,74);
       padding-left: 4vw;
       padding-right: 4vw;
-      margin-left: 0;
+      margin:0;
+      @media only screen and (max-width:762px){
+        font-size: 3vw;
+        padding: 2vw;
+        padding-top: 1vw;
+        padding-bottom:1vw;
+      }
   }
   a:hover{
     background-color: rgb(63, 86, 90);
