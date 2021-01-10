@@ -1,0 +1,46 @@
+.navbar-wrapper {
+  width: 80vw;
+  max-width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .name {
+    font-weight: 600;
+  }
+  .links-wrapper {
+    button {
+      text-decoration: none;
+      padding: 10px;
+      font-family: "Open Sans";
+      // opacity: 0.6;
+      transition: all 0.2s ease-in-out;
+      font-size: 0.8vw;
+      background-color: transparent;
+      outline: none;
+      border: 0px;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .about-button:hover {
+      color: #ff6830;
+    }
+    .challenge-button:hover {
+      color: #ff8b0f;
+    }
+    .sponsors-button:hover {
+      color: #92af63;
+    }
+    .faq-button:hover {
+      color: #3d9be9;
+    }
+    .schedule-button:hover {
+      color: rgb(124, 114, 232);
+    }
+    .active {
+      color: black;
+    }
+  }
+}

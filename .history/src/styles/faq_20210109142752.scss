@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
+hr {
+  display: block;
+  // height: 1px;
+  border-top: 1px solid white;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.bb-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(124, 114, 232);
+}
+.cc-promotion-container {
+  background-color: rgb(124, 114, 232);
+  display: flex;
+  align-items: center;
+  margin-top: 4vw;
+  padding: 0;
+  width: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  // max-width: 100%;
+  // width: 50vw;
+  // padding: 0;
+  // margin-top: 6vw;
+  // display: inline-flex;
+  // flex-direction: column;
+  // align-items: center;
+  // text-align: center;
+  // justify-content: center;
+}
+h1 {
+  // margin-top: 2vh;
+  color: white;
+  align-self: flex-start;
+  font-family: LuloCleanW01-OneBold;
+  font-size: 4vw;
+  margin: 0;
+  @include media(">=phone", "<lgphone") {
+    font-size: 15vw;
+  }
+  @include media(">=lgphone", "<tablet") {
+    font-size: 100vw;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 100vw;
+  }
+}
+
+.accordion-section {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  font-family: LuloCleanW01-OneBold;
+  @include media(">=phone", "<lgphone") {
+    width: 100vw;
+  }
+  @include media(">=lgphone", "<tablet") {
+    width: 100vw;
+  }
+  @include media(">=tablet", "<desktop") {
+    width: 100vw;
+  }
+}
+
+.accordion-title {
+  background-color: rgb(124, 114, 232);
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordion-title:hover,
+.active {
+  background-color: rgb(124, 114, 232);
+}
+
+.accordion-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: rgb(124, 114, 232);
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  text-align: left;
+  text-align: ;
+}
+
+.accordion-text {
+  font-family: Barlow;
+  // align-self: flex-start;
+  // text-align: left;
+  // font-variant: normal;
+  text-transform: capitalize;
+  //   font-weight: 400;
+  //   font-size: 14px;
+  //   padding: 18px;
+}

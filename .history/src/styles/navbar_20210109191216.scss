@@ -1,0 +1,153 @@
+@import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+.navbar-wrapper {
+  width: 80vw;
+  max-width: 100%;
+  height: 100%;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  display: flex;
+  margin-right: 25vw;
+  justify-content: flex-end;
+  align-items: center;
+  @include media(">=phone", "<lgphone") {
+    width: 100vw;
+    justify-content: center;
+  }
+  @include media(">=lgphone", "<tablet") {
+    width: 100vw;
+    justify-content: center;
+  }
+  @include media(">=tablet", "<desktop") {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .links-wrapper {
+    button {
+      margin-top: 6vh;
+      margin-right: 2vw;
+      font-family: Nunito;
+      transition: all 0.2s ease-in-out;
+      font-size: 0.8vw;
+      background-color: transparent;
+      // outline: none;
+      border: none;
+      cursor: pointer;
+      @include media(">=phone", "<lgphone") {
+        visibility: hidden;
+        margin: 0;
+        font-size: 4vw;
+      }
+      @include media(">=lgphone", "<tablet") {
+        width: 100vw;
+        // margin: 0;
+        justify-content: center;
+      }
+      @include media(">=tablet", "<desktop") {
+        width: 100vw;
+        justify-content: center;
+      }
+    }
+
+    .about-button:hover {
+      color: #ff6830;
+    }
+    .challenge-button:hover {
+      color: #ff8b0f;
+    }
+    .sponsors-button:hover {
+      color: #92af63;
+    }
+    .faq-button:hover {
+      color: #3d9be9;
+    }
+    .schedule-button:hover {
+      color: rgb(124, 114, 232);
+    }
+  }
+}
+
+// // .brand-title {
+// //   font-size: 1.5rem;
+// //   margin: 0.5rem;
+// // }
+
+// // .navbar-links {
+// //   height: 100%;
+// // }
+
+// .navbar-links ul {
+//   display: flex;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .navbar-links li {
+//   list-style: none;
+// }
+
+// .navbar-links li a {
+//   display: block;
+//   text-decoration: none;
+//   color: white;
+//   padding: 1rem;
+// }
+
+// .navbar-links li:hover {
+//   background-color: #555;
+// }
+
+.toggle-button {
+  position: absolute;
+  // top: 0.75rem;
+  // right: 1rem;
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10vw;
+  height: 5vh;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    color: black;
+    // background: black;
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
