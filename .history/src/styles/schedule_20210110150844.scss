@@ -1,0 +1,385 @@
+// // @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+// // //@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap')
+// // //@import "include-media.scss";
+
+// // .schedule-container{
+// //     max-width: 80%;
+// //     margin-right: 5vw;
+// //     display: block;
+// //     flex-direction: column;
+
+// //     .schedule-header{
+// //         color: #FF4040;
+// //         font-family: LuloCleanW01-OneBold;
+// //         font-weight: normal;
+// //         font-size: 8vw;
+// //         width: 80vw;
+// //         text-align: left;
+// //     }
+
+// //     .friday{
+// //         font-family: LuloCleanW01-OneBold;
+// //         padding-bottom: 10px;
+
+// //         .friday-date{
+// //             color: #FF6830;
+// //             font-size: 4vw;
+// //             margin-bottom: 0.5vw;
+// //         }
+
+// //         .friday-schedule{
+// //             background-color: #FF6830;
+// //             color: #FFFFFF;
+// //             width: 550px;
+// //             padding: 5%;
+// //             font-family: barlow;
+// //             font-size: 2vw;
+// //             line-height: 6vw;
+// //             display: grid;
+// //             grid-template-columns: 1fr 2fr;
+// //             column-gap: 3vw;
+
+// //             @media only screen and (max-width:762px){
+// //                 width: 72vw;
+// //             }
+
+// //             @media only screen and (max-width:1000px){
+// //                 font-size: 20px;
+// //             }
+
+// //             @media only screen and (max-width:565px){
+// //                 font-size: 3.5vw;
+// //             }
+
+// //             .friday-time{
+// //                 font-weight: bold;
+// //             }
+// //         }
+// //     }
+
+// //     .saturday{
+// //         font-family: LuloCleanW01-OneBold;
+// //         padding-bottom: 10px;
+// //         position: relative;
+// //         height: 65vw;
+
+// //         .saturday-date{
+// //             text-align: right;
+// //             color: #FF8B0F;
+// //             font-size: 4vw;
+// //             margin-bottom: 0.5vw;
+// //         }
+
+// //         .saturday-schedule{
+// //             position: absolute;
+// //             right: 0;
+// //             background-color: #FF8B0F;
+// //             color: #FFFFFF;
+// //             width: 550px;
+// //             padding: 5%;
+// //             font-family: barlow;
+// //             font-size: 2vw;
+// //             line-height: 6vw;
+// //             display: grid;
+// //             grid-template-columns: 1fr 2fr;
+// //             column-gap: 3vw;
+
+// //             @media only screen and (max-width:762px){
+// //                 width: 72vw;
+// //             }
+
+// //             @media only screen and (max-width:1000px){
+// //                 font-size: 20px;
+// //             }
+
+// //             @media only screen and (max-width:565px){
+// //                 font-size: 3.5vw;
+// //             }
+
+// //             .saturday-time{
+// //                 font-weight: bold;
+// //             }
+// //         }
+// //     }
+
+// //     .sunday{
+// //         font-family: LuloCleanW01-OneBold;
+
+// //         .sunday-date{
+// //             color: #92AF63;
+// //             font-size: 4vw;
+// //             margin-bottom: 0.5vw;
+// //             //height: 4vw;
+// //         }
+
+// //         .sunday-schedule{
+// //             background-color: #92AF63;
+// //             color: #FFFFFF;
+// //             width: 550px;
+// //             padding: 5%;
+// //             font-family: barlow;
+// //             font-size: 2vw;
+// //             line-height: 6vw;
+// //             display: grid;
+// //             grid-template-columns: 1fr 2fr;
+// //             column-gap: 3vw;
+
+// //             @media only screen and (max-width:762px){
+// //                 width: 72vw;
+// //             }
+// //             @media only screen and (max-width:1000px){
+// //                 font-size: 20px;
+// //             }
+
+// //             @media only screen and (max-width:565px){
+// //                 font-size: 3.5vw;
+// //             }
+// //             .sunday-time{
+// //                 font-weight: bold;
+// //             }
+// //         }
+// //     }
+// // }
+// @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+// //@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap')
+
+// .schedule-header {
+//   color: #ff4040;
+//   font-family: LuloCleanW01-OneBold;
+//   font-weight: normal;
+//   font-size: 8vw;
+//   width: 80vw;
+//   text-align: left;
+// }
+
+// .day {
+//   display: block;
+// }
+
+// .friday {
+//   font-family: LuloCleanW01-OneBold;
+//   padding-bottom: 10px;
+
+//   .friday-date {
+//     color: #ff6830;
+//     font-size: 4vw;
+//     margin-bottom: 0.5vw;
+//   }
+
+//   .friday-schedule {
+//     background-color: #ff6830;
+//     color: #ffffff;
+//     width: 550px;
+//     padding: 5%;
+//     font-family: barlow;
+//     font-size: 2vw;
+//     line-height: 6vw;
+//     display: grid;
+//     grid-template-columns: 1fr 2fr;
+//     column-gap: 3vw;
+//     //grid-template-rows: 1fr;
+
+//     .friday-time {
+//       font-weight: bold;
+//     }
+//   }
+// }
+
+// .saturday {
+//   font-family: LuloCleanW01-OneBold;
+//   float: right;
+//   padding-bottom: 10px;
+
+//   .saturday-date {
+//     color: #ff8b0f;
+//     font-size: 4vw;
+//     margin-bottom: 0.5vw;
+//     text-align: right;
+//   }
+
+//   .saturday-schedule {
+//     background-color: #ff8b0f;
+//     color: #ffffff;
+//     width: 550px;
+//     padding: 5%;
+//     padding-right: 0;
+//     font-family: barlow;
+//     font-size: 2vw;
+//     line-height: 6vw;
+//     display: grid;
+//     grid-template-columns: 1fr 2fr;
+//     //grid-template-rows: 1fr;
+//     column-gap: 3vw;
+//   }
+// }
+
+// .sunday {
+//   font-family: LuloCleanW01-OneBold;
+
+//   .sunday-date {
+//     color: #92af63;
+//     font-size: 4vw;
+//     margin-bottom: 0.5vw;
+//   }
+
+//   .sunday-schedule {
+//     background-color: #92af63;
+//     color: #ffffff;
+//     width: 550px;
+//     padding: 5%;
+//     font-family: barlow;
+//     font-size: 2vw;
+//     line-height: 6vw;
+//     display: grid;
+//     grid-template-columns: 1fr 2fr;
+//     column-gap: 3vw;
+//     //grid-template-rows: 1fr;
+//     //column-gap: 10px;
+//   }
+// }
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+//@import url(‘https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap’)
+//@import “include-media.scss”;
+.schedule-container {
+  max-width: 80%;
+  margin-right: 5vw;
+  display: block;
+  flex-direction: column;
+  //align-items: center;
+  //text-align: center;
+  //justify-content: center;
+  /*
+    @include media(“>=phone”, “<lgphone”) {
+        //height: 60vh;
+        gap: 10vw;
+      }
+      @include media(“>=lgphone”, “<tablet”) {
+        //height: 60vh;
+      }
+      @include media(“>=tablet”, “<desktop”) {
+        //height: 60vh;
+        gap: 10vw;
+      }
+      */
+  /*
+    .day{
+        display:block;
+        background-color: grey;
+        @media only screen and (max-width:762px){
+            background-color: white;
+        }
+    }*/
+  .schedule-header {
+    color: #ff4040;
+    font-family: LuloCleanW01-OneBold;
+    font-weight: normal;
+    font-size: 8vw;
+    width: 80vw;
+    text-align: left;
+  }
+  .friday {
+    font-family: LuloCleanW01-OneBold;
+    padding-bottom: 10px;
+    .friday-date {
+      color: #ff6830;
+      font-size: 4vw;
+      margin-bottom: 0.5vw;
+    }
+    .friday-schedule {
+      background-color: #ff6830;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      grid-template-rows: 1fr;
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      .friday-time {
+        font-weight: bold;
+      }
+    }
+  }
+  .saturday {
+    font-family: LuloCleanW01-OneBold;
+    padding-bottom: 10px;
+    position: relative;
+    height: 65vw;
+    .saturday-date {
+      text-align: right;
+      color: #ff8b0f;
+      font-size: 4vw;
+      margin-bottom: 0.5vw;
+    }
+    .saturday-schedule {
+      position: absolute;
+      right: 0;
+      background-color: #ff8b0f;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      .saturday-time {
+        font-weight: bold;
+      }
+    }
+  }
+  .sunday {
+    font-family: LuloCleanW01-OneBold;
+    .sunday-date {
+      color: #92af63;
+      font-size: 4vw;
+      margin-bottom: 0.5vw;
+      //height: 4vw;
+    }
+    .sunday-schedule {
+      background-color: #92af63;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      .sunday-time {
+        font-weight: bold;
+      }
+    }
+  }
+}

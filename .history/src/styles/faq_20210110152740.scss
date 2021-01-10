@@ -87,11 +87,9 @@ h1.faq-title {
   }
   @include media(">=lgphone", "<tablet") {
     font-size: 5vw;
-    margin-left: 2vw;
   }
   @include media(">=tablet", "<desktop") {
     font-size: 5vw;
-    margin-left: 2vw;
   }
 }
 
@@ -118,17 +116,14 @@ h1.faq-title {
   @include media(">=phone", "<lgphone") {
     margin: 0;
     font-size: 6vw;
-    margin-left: 2vw;
   }
   @include media(">=lgphone", "<tablet") {
     margin: 0;
     font-size: 5vw;
-    margin-left: 2vw;
   }
   @include media(">=tablet", "<desktop") {
     margin: 0;
     font-size: 6vw;
-    margin-left: 2vw;
   }
 }
 
