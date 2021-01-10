@@ -1,7 +1,33 @@
 @import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
 
+// .about-section {
+//   background-color: #ff6830;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin: 0;
+//   padding: 0;
 
+//   h1 {
+//     text-align: center;
+//     margin-top: 2vh;
+//     font-family: LuloCleanW01-OneBold;
+//     color: white;
+//     font-size: 7vw;
+//     margin-bottom: 2vh;
+//   }
+
+//   p {
+//     margin-top: 2vh;
+//     width: 80vw;
+//     text-align: center;
+//     font-family: Nunito;
+//     font-weight: 600;
+//     color: white;
+//     font-size: 3vw;
+//   }
 .about-section {
   background-color: #ff6830;
   //change back to vw
@@ -63,14 +89,26 @@
     background-color: white;
     color: #ff6830;
     padding: 1em 2em;
-    text-underline-position: unset;
-    text-decoration: none;
     cursor: pointer;
   }
-
-  .signUp:hover {
-    background-color: #2b2b2b;
-    color: white;
-    box-shadow: inset 0 0 0 1px white;
-  }
 }
+//   .signUp {
+//     margin-top: 2vw;
+//     margin-bottom: 4vw;
+//     font-size: 1.5rem;
+//     font-family: "LuloCleanW01-OneBold";
+//     letter-spacing: 0.05em;
+//     line-height: 4vw;
+//     background-color: white;
+//     color: #ff6830;
+//     padding: 1em 2em;
+//     text-underline-position: unset;
+//     text-decoration: none;
+//     cursor: pointer;
+//   }
+//   .signUp:hover {
+//     background-color: #2b2b2b;
+//     color: white;
+//     box-shadow: inset 0 0 0 1px white;
+//   }
+// }
