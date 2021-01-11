@@ -19,15 +19,10 @@
     color: white;
     font-size: 83px;
     margin-bottom: 2vh;
-    @include media(">=phone", "<lgphone") {
-      width: 100vw;
-      font-size: 7vw;
-    }
-    @include media(">=lgphone", "<tablet") {
-      width: 100vw;
-      font-size: 7vw;
-    }
-    @include media(">=tablet", "<desktop") {
+    width: 100vw;
+    font-size: 7vw;
+    text-align: center;
+    @include media(">=phone", "<desktop") {
       width: 100vw;
       font-size: 7vw;
     }
@@ -40,15 +35,7 @@
     font-weight: 500;
     color: white;
     font-size: 1.5vw;
-    @include media(">=phone", "<lgphone") {
-      width: 80vw;
-      font-size: 5vw;
-    }
-    @include media(">=lgphone", "<tablet") {
-      width: 80vw;
-      font-size: 5vw;
-    }
-    @include media(">=tablet", "<desktop") {
+    @include media(">=phone", "<desktop") {
       width: 80vw;
       font-size: 5vw;
     }
