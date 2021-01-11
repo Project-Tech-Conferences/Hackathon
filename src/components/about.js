@@ -8,7 +8,7 @@ const About = () => {
       <div className="container">
         <div className="about-section">
           <Fade bottom cascade>
-            <h1>Code for Covid</h1>
+            <h1>Code for <br className="break"></br>Covid</h1>
           </Fade>
           <p className="about-content">{data.aboutParaOne}</p>
           <a
