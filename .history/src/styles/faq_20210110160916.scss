@@ -65,9 +65,7 @@ h1.faq-title {
   @include media(">=tablet", "<desktop") {
     width: 100vw;
   }
-  @include media(">=1920", "<desktop") {
-    width: 100vw;
-  }
+  
 }
 
 .accordion-title p {

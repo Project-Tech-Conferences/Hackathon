@@ -19,7 +19,7 @@
     padding-bottom: 10px;
     .friday-date {
       color: #ff6830;
-      font-size: 2vw;
+      font-size: 4vw;
       margin-bottom: 0.5vw;
     }
     .friday-schedule {
@@ -36,7 +36,7 @@
       line-height: 6vw;
       display: grid;
       grid-template-columns: 1fr 2fr;
-      column-gap: 3vw;
+    //   column-gap: 3vw;
       @media only screen and (max-width: 762px) {
         width: 72vw;
       }
