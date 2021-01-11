@@ -17,12 +17,9 @@
     font-family: LuloCleanW01-OneBold;
     color: white;
     font-size: 6vw;
-    margin-bottom: 2vh;
+    margin-bottom: 0.5vh;
     @media only screen and (min-width: 1200px) {
-      font-size: 75px;
-    }
-    @media only screen and (max-width: 600px) {
-      margin-bottom: 0.5vw;
+      font-size: 5vw;
     }
     @media only screen and (max-width: 400px) {
       font-size: 25px;
@@ -47,8 +44,8 @@
       margin-top: 0.5;
     }
     @media only screen and (min-width: 1200px) {
-      font-size: 30px;
-      width: 800px;
+      //font-size: 3vw;
+      //width: 800px;
     }
     @media only screen and (max-width: 600px) {
       font-size: 15px;
