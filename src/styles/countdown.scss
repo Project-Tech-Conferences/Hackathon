@@ -2,43 +2,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
 
 .promotion-container {
-  max-width: 100%;
+  width: 90%;
   height: 60vw;
-  //height: 80vh;
-  margin-right: 5vw;
-  padding: 0;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
   justify-content: center;
-  @include media(">=phone", "<lgphone") {
-    //gap: 10vw;
-  }
-  @include media(">=tablet", "<desktop") {
-    //gap: 10vw;
-  }
+
 
   h1.title {
+    width:100%;
     color: #ff8b0f;
     font-family: LuloCleanW01-OneBold;
-    font-size: 5.5vw;
+    font-size: 7.5vw;
     margin: -2vw;
     transform: rotate(-90deg);
-    @include media(">=phone", "<lgphone") {
+    @include media(">=phone", "<desktop") {
       margin: 0 -5vw;
-      font-size: 7.5vw;
     }
-    @include media(">=lgphone", "<tablet") {
-      // width: 100vw;
-      margin: 0 -5vw;
-      font-size: 7.5vw;
-      // padding: 7vw;
+
+    .coming{
+
     }
-    @include media(">=tablet", "<desktop") {
-      // width: 100vw;
-      margin: 0 -5vw;
-      font-size: 7.5vw;
+    .soon{
+
     }
   }
 
@@ -56,7 +44,7 @@
     column-gap: 5vw;
     @include media(">=phone", "<lgphone") {
       // height: 60vh;
-      font-size: 12vw;
+      //font-size: 12vw;
     }
     @include media(">=lgphone", "<tablet") {
       // height: 60vh;
@@ -105,21 +93,36 @@
       flex-direction: row;
     }
     .time-left {
-      font-size: 1.5vw;
+      font-size: 3vw;
       align-self: center;
       justify-self: start;
       @include media(">=phone", "<lgphone") {
         // height: 60vh;
-        font-size: 3vw;
+        //font-size: 3vw;
       }
       @include media(">=lgphone", "<tablet") {
         // height: 60vh;
-        font-size: 3vw;
+        //font-size: 3vw;
       }
       @include media(">=tablet", "<desktop") {
         // height: 60vh;
-        font-size: 3vw;
+        //font-size: 3vw;
       }
     }
   }
 }
+
+
+/*    @include media(">=phone", "<lgphone") {
+      // height: 60vh;
+      font-size: 12vw;
+    }
+    @include media(">=lgphone", "<tablet") {
+      // height: 60vh;
+      // font-size: 12vw;
+    }
+    @include media(">=tablet", "<desktop") {
+      // height: 60vh;
+      // font-size: 12vw;
+    }
+*/
