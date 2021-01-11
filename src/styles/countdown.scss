@@ -1,11 +1,10 @@
 @import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+
 .promotion-container {
-  // width: 100vw;
-  //change back to 100vw
   max-width: 100%;
-  // width: 100vw;
-  height: 80vh;
+  height: 60vw;
+  //height: 80vh;
   margin-right: 5vw;
   padding: 0;
   display: inline-flex;
@@ -14,16 +13,12 @@
   text-align: center;
   justify-content: center;
   @include media(">=phone", "<lgphone") {
-    height: 60vh;
-    gap: 10vw;
-  }
-  @include media(">=lgphone", "<tablet") {
-    height: 60vh;
+    //gap: 10vw;
   }
   @include media(">=tablet", "<desktop") {
-    height: 60vh;
-    gap: 10vw;
+    //gap: 10vw;
   }
+
   h1.title {
     color: #ff8b0f;
     font-family: LuloCleanW01-OneBold;
@@ -46,6 +41,7 @@
       font-size: 7.5vw;
     }
   }
+
   .countdown {
     font-family: LuloCleanW01-OneBold;
     max-width: 15vw;
