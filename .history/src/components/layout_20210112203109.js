@@ -6,13 +6,17 @@
  */
 
 import React from "react"
+import Navbar from "./Navbar"
+
 import Nav from "./Nav.js"
 import "../styles/mains.scss"
 
 const Layout = ({ children }) => {
   return (
     <>
+      {/* <NavbarV2></NavbarV2> */}
       <Nav></Nav>
+      {/* <Navbar></Navbar> */}
       <main>{children}</main>
     </>
   )

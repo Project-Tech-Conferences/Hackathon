@@ -26,10 +26,10 @@ class Nav extends Component {
             aria-hidden="true"
             onClick={e => this.handleToggle(e)}
           />
-          {/* <i className="fas fa-chevron-down"></i> */}
-          {/* <div> */}
-            {/* <i className="fa fa-spinner fa-spin">c</i> */}
-          {/* </div> */}
+          <i className="fas fa-chevron-down"></i>
+          <div>
+            <i className="fa fa-spinner fa-spin">c</i>
+          </div>
           <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
             <li onClick={() => scrollTo("#about")} className="about-button">
               ABOUT

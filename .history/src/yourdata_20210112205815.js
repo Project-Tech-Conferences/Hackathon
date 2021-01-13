@@ -202,22 +202,22 @@ export default {
   social: [
     // Add Or Remove The Link Accordingly
     {
-      key: 1,
+      key=1,
       img: linkedinIcon,
       url: "https://www.linkedin.com/company/projecttc/",
     },
     {
-      key: 2,
+      key=2,
       img: igIcon,
       url: "https://www.instagram.com/projecttechconferences/",
     },
     {
-      key: 3,
+      key=3,
       img: fbIcon,
       url: "https://www.facebook.com/projecttechconferences",
     },
     {
-      key: 4,
+      key:4,
       img: youtubeIcon,
       url: "https://www.youtube.com/channel/UCv7Db7tLjNOn4AFqTGEAArQ",
     },
