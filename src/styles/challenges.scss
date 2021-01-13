@@ -6,13 +6,10 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  //change back to vw
-  // width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  // align-items: stretch;
 
   h1 {
     text-align: center;
@@ -20,13 +17,7 @@
     font-family: LuloCleanW01-OneBold;
     color: white;
     font-size: 83px;
-    @include media(">=phone", "<lgphone") {
-      font-size: 9vw;
-    }
-    @include media(">=lgphone", "<tablet") {
-      font-size: 9vw;
-    }
-    @include media(">=tablet", "<desktop") {
+    @media only screen and (max-width: 1000px) {
       font-size: 9vw;
     }
   }
@@ -36,34 +27,18 @@
     grid-template-columns: repeat(3, 1fr);
     margin-top: 0px;
     grid-gap: 10px;
-    @include media(">=phone", "<lgphone") {
-      grid-template-columns: 1fr;
-    }
-    @include media(">=lgphone", "<tablet") {
-      grid-template-columns: 1fr;
-    }
-    @include media(">=tablet", "<desktop") {
+    @media only screen and (max-width: 600px) {
       grid-template-columns: 1fr;
     }
     .challengeBox {
       display: flex;
       flex-direction: column;
-      // align-items: center;
-      // text-align: center;
       border: 5px solid white;
-      height: 28vh;
-      width: 15vw;
-      margin-bottom: 10vh;
-      @include media(">=phone", "<lgphone") {
-        height: 50vh;
-        width: 80vw;
-      }
-      @include media(">=lgphone", "<tablet") {
-        height: 50vh;
-        width: 80vw;
-      }
-      @include media(">=tablet", "<desktop") {
-        height: 50vh;
+      height: 30vw;
+      width: 27vw;
+      margin-bottom: 10vw;
+      @media only screen and (max-width: 600px) {
+        height: 80vw;
         width: 80vw;
       }
       p {
@@ -71,14 +46,8 @@
         align-self: center;
         font-family: LuloCleanW01-OneBold;
         color: white;
-        font-size: 1.4vw;
-        @include media(">=phone", "<lgphone") {
-          font-size: 7vw;
-        }
-        @include media(">=lgphone", "<tablet") {
-          font-size: 7vw;
-        }
-        @include media(">=tablet", "<desktop") {
+        font-size: 2.2vw;
+        @media only screen and (max-width: 600px) {
           font-size: 7vw;
         }
       }
