@@ -19,14 +19,18 @@
     padding-bottom: 10px;
     .friday-date {
       color: #ff6830;
-      font-size: 4vw;
+      font-size: 2vw;
       margin-bottom: 0.5vw;
     }
     .friday-schedule {
       background-color: #ff6830;
       color: #ffffff;
       width: 550px;
-      padding: 5%;
+      padding: 1vw 0;
+      margin: 0;
+      padding-right: 20vw;
+      //   padding: 1vw 3vw;
+      //   padding: 5%;
       font-family: barlow;
       font-size: 2vw;
       line-height: 6vw;
@@ -41,6 +45,9 @@
       }
       @media only screen and (max-width: 565px) {
         font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        font-size: 1.5vw;
       }
       .friday-time {
         font-weight: bold;
@@ -80,6 +87,9 @@
       @media only screen and (max-width: 565px) {
         font-size: 3.5vw;
       }
+      @include media(">=desktop") {
+        font-size: 1.5vw;
+      }
       .saturday-time {
         font-weight: bold;
       }
@@ -112,6 +122,9 @@
       }
       @media only screen and (max-width: 565px) {
         font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        font-size: 1.5vw;
       }
       .sunday-time {
         font-weight: bold;

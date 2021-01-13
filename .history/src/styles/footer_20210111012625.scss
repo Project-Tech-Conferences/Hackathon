@@ -1,0 +1,73 @@
+.footer-container {
+  width: 100vw;
+  max-width: 100%;
+  background-color: black;
+  margin-top: 10vh;
+  height: 30vh;
+  // margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+  color: white;
+  font-family: Open Sans;
+  .ptc-container {
+    width: fit-content;
+    text-align: left;
+
+    .ptc-icon {
+      margin: 0;
+      padding: 0;
+    }
+    .ptc-title {
+      font-style: italic;
+      line-height: 1.5em;
+      margin-top: -3vh;
+    }
+    .ptc-motto {
+      margin: 0;
+      margin-top: 3vh;
+      padding: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+  }
+  .return-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: ;
+    // justify-content: center;
+    // align-items: center;
+    // justify-items: center;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 1em 7em;
+    font-family: arial;
+    text-underline-position: unset;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 500ms;
+  }
+
+  .return-button:hover {
+    background-color: rgb(247, 72, 74);
+    color: white;
+  }
+
+  .social-icons {
+    // margin-top: 20px;
+    img {
+      height: 2rem;
+      height: 20px;
+      width: 20px;
+      margin: 10px;
+    }
+  }
+  span {
+    margin-top: 10px;
+  }
+}
