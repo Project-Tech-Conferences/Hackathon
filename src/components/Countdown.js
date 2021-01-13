@@ -69,7 +69,7 @@ const Countdown = () => {
       <div className="container">
         <div className="promotion-container">
           <Fade bottom cascade>
-            <h1 className="title coming">Coming</h1>
+            <h1 className="coming">Coming</h1>
             <div className="countdown">
               {timerComponents.length ? (
                 <>
@@ -101,7 +101,7 @@ const Countdown = () => {
                 <span className="timer-done">PTC Hacks has begun!</span>
               )}
             </div>
-            <h1 className="title soon">Soon</h1>
+            <h1 className="soon">Soon</h1>
           </Fade>
         </div>
       </div>
