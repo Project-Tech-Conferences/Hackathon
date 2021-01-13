@@ -30,28 +30,23 @@
     }
   }
   p {
-    margin-top: 1vh;
+    margin-top: -2vh;
     width: 50vw;
     text-align: center;
     font-family: Nunito;
     font-weight: 500;
     color: white;
-    font-size: 2vw;
-    @media only screen and (max-width: 1200px) {
-      width: 80vw;
-      font-size: 4vw;
-    }
+    font-size: 3vw;
   }
   .signUp {
     margin: 0vw 0 4vw 0;
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: "LuloCleanW01-OneBold";
     letter-spacing: 0.05vw;
     line-height: 4vw;
     background-color: white;
     color: #ff6830;
-    text-decoration: unset;
-    padding: 0.5vw 4vw;
+    padding: 2vw 4vw;
     cursor: pointer;
   }
 
