@@ -119,6 +119,26 @@
     }
   }
 }
-.day {
-  background-color: grey;
+
+button{
+  background-color: #92af63;
+  color: #ffffff; 
+  //letter-spacing: 0em;
+  margin: 5vw 4px 0px 0px;
+  padding: 1vw 2vw;
+  font-family: barlow;
+  font-size: 3vw;
+  border: none;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 25px;
+    //float:right;
+  }
+
+  @media only screen and (max-width: 970px) {
+    //font-size: 3vw;
+    //float:right;
+  }
 }
+
+

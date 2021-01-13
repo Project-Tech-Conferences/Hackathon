@@ -1,7 +1,28 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
+import scrollTo from "gatsby-plugin-smoothscroll"
 //import data from "../yourdata"
 //import style from "../styles/schedule.scss"
+
+//Get the button:
+const mybutton = document.getElementById("top-button");
+
+// When the user scrolls down 20px from the top of the document, show the button
+/*window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}*/
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 const Schedule = () => {
   return (
@@ -77,7 +98,9 @@ const Schedule = () => {
             </div>
           </Fade>
 
-          <button>Back to top</button>
+          <button onClick={() => scrollTo("#home")} className="top-button">
+              Back to Top 
+          </button>
         </div>
       </div>
     </div>
