@@ -12,7 +12,9 @@ import "../styles/mains.scss"
 const Layout = ({ children }) => {
   return (
     <>
+      {/* <NavbarV2></NavbarV2> */}
       <Nav></Nav>
+      {/* <Navbar></Navbar> */}
       <main>{children}</main>
     </>
   )

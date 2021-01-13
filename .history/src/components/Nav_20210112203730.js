@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
-import "font-awesome/css/font-awesome.min.css"
 
 class Nav extends Component {
   constructor(props) {
@@ -26,10 +25,7 @@ class Nav extends Component {
             aria-hidden="true"
             onClick={e => this.handleToggle(e)}
           />
-          {/* <i className="fas fa-chevron-down"></i> */}
-          {/* <div> */}
-            {/* <i className="fa fa-spinner fa-spin">c</i> */}
-          {/* </div> */}
+          <i className="fa fa"></i>
           <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
             <li onClick={() => scrollTo("#about")} className="about-button">
               ABOUT
