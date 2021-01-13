@@ -3,68 +3,50 @@
 
 .about-section {
   background-color: #ff6830;
-  //change back to vw
   width: 100%;
   display: flex;
   flex-direction: column;
-  // text-align: justify;
   align-items: center;
   margin: 0;
   padding: 0;
+  margin-top: 2vh;
+  font-family: LuloCleanW01-OneBold;
+  color: white;
+  font-size: 7vw;
+  margin-bottom: 2vh;
 
   h1 {
-    margin-top: 2vh;
+    margin: 2vw;
     font-family: LuloCleanW01-OneBold;
     color: white;
-    font-size: 83px;
+    font-size: 6.5vw;
     text-align: center;
-    margin-bottom: 2vh;
-    @include media(">=phone", "<lgphone") {
-      width: 100vw;
-      font-size: 7vw;
-    }
-    @include media(">=lgphone", "<tablet") {
-      width: 100vw;
-      font-size: 7vw;
-    }
-    @include media(">=tablet", "<desktop") {
-      width: 100vw;
-      font-size: 7vw;
+
+    br{
+      display: none; 
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
     }
   }
   p {
     margin-top: 2vh;
-    width: 40vw;
+    width: 80vw;
     text-align: center;
     font-family: Nunito;
     font-weight: 500;
     color: white;
-    font-size: 1.5vw;
-    @include media(">=phone", "<lgphone") {
-      width: 80vw;
-      font-size: 5vw;
-    }
-    @include media(">=lgphone", "<tablet") {
-      width: 80vw;
-      font-size: 5vw;
-    }
-    @include media(">=tablet", "<desktop") {
-      width: 80vw;
-      font-size: 5vw;
-    }
+    font-size: 3vw;
   }
   .signUp {
-    margin-top: 2vh;
-    margin-bottom: 4vh;
-    font-size: 1.5rem;
+    margin: 0vw 0 4vw 0 ;
+    font-size: 3vw;
     font-family: "LuloCleanW01-OneBold";
-    letter-spacing: 0.05em;
-    line-height: 13px;
+    letter-spacing: 0.05vw;
+    line-height: 4vw;
     background-color: white;
     color: #ff6830;
-    padding: 1em 2em;
-    text-underline-position: unset;
-    text-decoration: none;
+    padding: 2vw 4vw;
     cursor: pointer;
   }
 
