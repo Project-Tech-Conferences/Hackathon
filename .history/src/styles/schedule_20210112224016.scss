@@ -129,7 +129,7 @@
   }
 }
 
-.top-button{
+.top-button {
   background-color: #92af63;
   color: #ffffff;
   //letter-spacing: 0em;
@@ -142,6 +142,11 @@
 
   @media only screen and (min-width: 800px) {
     font-size: 25px;
+    //float:right;
+  }
+
+  @media only screen and (max-width: 970px) {
+    //font-size: 3vw;
     //float:right;
   }
 }

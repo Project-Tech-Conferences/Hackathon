@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
+hr {
+  display: block;
+  // height: 1px;
+  border-top: 1px solid white;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.bb-container {
+  // margin-top: 3vh;
+  max-width: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(124, 114, 232);
+}
+.cc-promotion-container {
+  background-color: rgb(124, 114, 232);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+h1.faq-title {
+  // margin-top: 2vh;
+  color: white;
+  align-self: flex-start;
+  font-family: LuloCleanW01-OneBold;
+  font-size: 5vw;
+  margin: 0;
+  @include media(">=phone", "<lgphone") {
+    font-size: 15vw;
+    margin-top: 2vw;
+    // margin-bottom: 2vw;
+  }
+  @include media(">=lgphone", "<tablet") {
+    font-size: 15vw;
+    margin-top: 2vw;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 15vw;
+    margin-top: 2vw;
+  }
+}
+
+.accordion-section {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  font-family: LuloCleanW01-OneBold;
+  @include media(">=phone", "<lgphone") {
+    width: 100vw;
+  }
+  @include media(">=lgphone", "<tablet") {
+    width: 100vw;
+  }
+  @include media(">=tablet", "<desktop") {
+    width: 100vw;
+  }
+  @include media(">=1920", "<desktop") {
+    width: 100vw;
+  }
+}
+
+.accordion-title p {
+  text-align: left;
+  margin: 0.5vw 0;
+}
+.accordion-title {
+  background-color: rgb(124, 114, 232);
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  outline: none;
+  font-size: 1vw;
+  transition: background-color 0.6s ease;
+  @include media(">=phone", "<lgphone") {
+    font-size: 5vw;
+    margin-left: 2vw;
+  }
+  @include media(">=lgphone", "<tablet") {
+    font-size: 5vw;
+    margin-left: 2vw;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 5vw;
+    margin-left: 2vw;
+  }
+}
+
+.accordion-title:hover,
+.active {
+  background-color: rgb(124, 114, 232);
+}
+
+.accordion-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: rgb(124, 114, 232);
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  text-align: start;
+  margin-left: 0.5vw;
+  @include media(">=phone", "<lgphone") {
+    margin: 0;
+    font-size: 6vw;
+    margin-left: 2vw;
+  }
+  @include media(">=lgphone", "<tablet") {
+    margin: 0;
+    font-size: 5vw;
+    margin-left: 2vw;
+  }
+  @include media(">=tablet", "<desktop") {
+    margin: 0;
+    font-size: 6vw;
+    margin-left: 2vw;
+  }
+}
+
+.accordion-text {
+  font-family: Barlow;
+}
