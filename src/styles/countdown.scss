@@ -50,10 +50,10 @@
 
 
   .countdown {
-    margin-left: 20vw;
+    margin-left: 30vw;
     width: 60vw;
     margin-top: 3vw;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -89,7 +89,7 @@
     }
 
     .time-left {
-      font-size: 5vw;
+      font-size: 2vw;
       align-self: center;
       justify-self: start;
       @media only screen and (max-width: 400px) {
