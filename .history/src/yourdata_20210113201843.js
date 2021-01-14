@@ -24,7 +24,7 @@ export default {
   //Change The Website Template
 
   //   Header Details ---------------------
-  name: "PTC",
+  name: "H",
   headerTagline: [
     //Line 1 For Header
     "Building digital",
@@ -154,3 +154,4 @@ export default {
   // End Contact Section ---------------
 }
 
+// Thanks for using this template, I would love to hear from you contact me at hello@chetanverma.com

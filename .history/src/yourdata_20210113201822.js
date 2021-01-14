@@ -37,9 +37,13 @@ export default {
   headerParagraph:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
 
+
+
   // End Header Details -----------------------
 
-  /*
+  
+
+    /*
     If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
     ,{
         id: 5,
@@ -49,7 +53,7 @@ export default {
         url: ''
     }
     */
-  // ],
+  ],
 
   // End Work Section -----------------------
 
@@ -154,3 +158,4 @@ export default {
   // End Contact Section ---------------
 }
 
+// Thanks for using this template, I would love to hear from you contact me at hello@chetanverma.com
