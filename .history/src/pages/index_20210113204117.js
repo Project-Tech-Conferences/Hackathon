@@ -16,7 +16,7 @@ import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="HACKATHON" />
+    <SEO title="HOME" />
 
     <Header></Header>
     {/* <Work></Work> */}
