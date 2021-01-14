@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+//   @import "include-media.scss";
+.schedule-container {
+  max-width: 80%;
+  margin-right: 5vw;
+  display: block;
+  flex-direction: column;
+  .schedule-header {
+    color: #ff4040;
+    font-family: LuloCleanW01-OneBold;
+    font-weight: normal;
+    font-size: 5vw;
+    width: 80vw;
+    text-align: left;
+  }
+  .friday {
+    font-family: LuloCleanW01-OneBold;
+    padding-bottom: 10px;
+    .friday-date {
+      color: #ff6830;
+      font-size: 3vw;
+      margin-bottom: 0.5vw;
+    }
+    .friday-schedule {
+      background-color: #ff6830;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        padding: 2%;
+        padding-right: 5vw;
+        font-size: 1.5vw;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+        line-height: 60px;
+      }
+      .friday-time {
+        font-weight: bold;
+      }
+    }
+  }
+  .saturday {
+    font-family: LuloCleanW01-OneBold;
+    padding-bottom: 10px;
+    position: relative;
+    height: 65vw;
+    @media only screen and (min-width: 800px) {
+      height: 650px;
+    }
+    @media only screen and (min-width: 1200px) {
+      height: 680px;
+    }
+    @media only screen and (min-width: 1500px) {
+      height: 700px;
+    }
+    @media only screen and (min-width: 1800px) {
+      height: 730px;
+    }
+    .saturday-date {
+      text-align: right;
+      color: #ff8b0f;
+      font-size: 3vw;
+      margin-bottom: 0.5vw;
+    }
+    .saturday-schedule {
+      position: absolute;
+      right: 0;
+      background-color: #ff8b0f;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+        // padding-right: 20vw;
+      }
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        padding: 2%;
+        padding-left: 5vw;
+        font-size: 1.5vw;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+        line-height: 60px;
+      }
+      .saturday-time {
+        font-weight: bold;
+      }
+    }
+  }
+  .sunday {
+    font-family: LuloCleanW01-OneBold;
+    .sunday-date {
+      color: #92af63;
+      font-size: 3vw;
+      margin-bottom: 0.5vw;
+      //height: 4vw;
+    }
+    .sunday-schedule {
+      background-color: #92af63;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        font-size: 1.5vw;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+        line-height: 60px;
+      }
+      .sunday-time {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.top-button {
+  background-color: #92af63;
+  color: #ffffff;
+  //letter-spacing: 0em;
+  margin: 5vw 4px 0px 0px;
+  padding: 1vw 2vw;
+  font-family: barlow;
+  font-size: 3vw;
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 25px;
+    //float:right;
+  }
+}
