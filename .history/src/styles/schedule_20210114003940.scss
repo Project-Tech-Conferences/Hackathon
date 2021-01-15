@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+//   @import "include-media.scss";
+.schedule-container {
+  max-width: 80%;
+  font-family: Raleway;
+  // width: 80vw;
+  margin-right: 5vw;
+  display: block;
+  flex-direction: column;
+
+  @include media(">=desktop") {
+    max-width: 60%;
+  }
+  .schedule-header {
+    color: #ff4040;
+    // font-family: LuloCleanW01-OneBold;
+    font-family: Raleway;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 5vw;
+    width: 80vw;
+    text-align: left;
+    @media only screen and (max-width: 950px) {
+      // width: 100vw;
+      align-self: center;
+      font-size: 9vw;
+    }
+  }
+  .friday {
+    // font-family: LuloCleanW01-OneBold;
+    padding-bottom: 10px;
+    .friday-date {
+      color: #ff6830;
+      font-size: 3vw;
+      margin-bottom: 0.5vw;
+    }
+    .friday-schedule {
+      background-color: #ff6830;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        padding: 1%;
+        padding-right: 5vw;
+        padding-left: 1vw;
+        font-size: 1.5vw;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+        line-height: 60px;
+      }
+      .friday-time {
+        font-weight: bold;
+      }
+    }
+  }
+  .saturday {
+    // font-family: LuloCleanW01-OneBold;
+    padding-bottom: 10px;
+    position: relative;
+    height: 65vw;
+    @media only screen and (min-width: 800px) {
+      height: 580px;
+    }
+    @media only screen and (min-width: 1200px) {
+      height: 580px;
+    }
+    @media only screen and (min-width: 1500px) {
+      height: 550px;
+    }
+    @media only screen and (min-width: 1800px) {
+      height: 600px;
+    }
+
+    .saturday-date {
+      text-align: right;
+      color: #ff8b0f;
+      font-size: 3vw;
+      margin-bottom: 0.5vw;
+    }
+    .saturday-schedule {
+      position: absolute;
+      right: 0;
+      background-color: #ff8b0f;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+        // padding-right: 20vw;
+      }
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        padding: 1%;
+        padding-left: 1vw;
+        padding-right: 5vw;
+        font-size: 1.5vw;
+        // margin-bottom: 0;
+        // padding-bottom: 0;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+        line-height: 60px;
+      }
+      .saturday-time {
+        font-weight: bold;
+      }
+    }
+  }
+  .sunday {
+    // font-family: LuloCleanW01-OneBold;
+    .sunday-date {
+      color: #92af63;
+      font-size: 3vw;
+      margin-bottom: 0.5vw;
+      //height: 4vw;
+    }
+    .sunday-schedule {
+      background-color: #92af63;
+      color: #ffffff;
+      width: 550px;
+      padding: 5%;
+      font-family: barlow;
+      font-size: 2vw;
+      line-height: 6vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3vw;
+      @media only screen and (max-width: 762px) {
+        width: 72vw;
+      }
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 565px) {
+        font-size: 3.5vw;
+      }
+      @include media(">=desktop") {
+        padding: 1%;
+        padding-left: 1vw;
+        padding-right: 5vw;
+        font-size: 1.5vw;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 25px;
+        line-height: 60px;
+      }
+      .sunday-time {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.top-button {
+  background-color: #92af63;
+  color: #ffffff;
+  //letter-spacing: 0em;
+  margin: 3vw 0;
+  // margin: 3vw 3vw 0px 0px;
+  // margin-bottom: 10vw;
+  padding: 0.5vw 2vw;
+  font-family: barlow;
+  font-size: 3vw;
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (min-width: 800px) {
+    margin-bottom: 6vw;
+    font-size: 25px;
+    //float:right;
+  }
+}
