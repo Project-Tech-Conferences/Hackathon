@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
+hr {
+  display: block;
+  border-top: 1px solid white;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.bb-container {
+  max-width: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(124, 114, 232);
+}
+.cc-promotion-container {
+  background-color: rgb(124, 114, 232);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+h1.faq-title {
+  // margin-top: 2vh;
+  color: white;
+  align-self: flex-start;
+  font-family: Raleway;
+  font-weight: 900;
+  letter-spacing: 2vw;
+  font-size: 6vw;
+  margin: 0;
+  @media only screen and (max-width: 1000px) {
+    align-self: center;
+    font-size: 10vw;
+    margin-top: 2vw;
+  }
+}
+
+.accordion-section {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  @media only screen and (max-width: 1000px) {
+    width: 90vw;
+    font-size: 2vw;
+  }
+}
+
+.accordion-title p {
+  text-align: left;
+  margin: 0.5vw 0;
+}
+.accordion-title {
+  background-color: rgb(124, 114, 232);
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  outline: none;
+  font-size: 1vw;
+  transition: background-color 0.6s ease;
+  @media only screen and (max-width: 1800px) {
+    font-size: 2vw;
+    // margin-left: 2vw;
+  }
+  @media only screen and (max-width: 550px) {
+    font-size: 3vw;
+    // margin-left: 2vw;
+  }
+}
+
+.accordion-title:hover,
+.active {
+  background-color: rgb(124, 114, 232);
+}
+
+.accordion-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: rgb(124, 114, 232);
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: white;
+  text-align: start;
+  margin-left: 0.5vw;
+  font-size: 1vw;
+  @media only screen and (max-width: 1800px) {
+    font-size: 2vw;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 2.5vw;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 3vw;
+    margin-left: 2vw;
+  }
+}
+
+.accordion-text {
+  font-family: Barlow;
+  letter-spacing: 3;
+}
