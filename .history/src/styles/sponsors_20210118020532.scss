@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+.aa-container {
+  background-color: white;
+  max-width: 100%;
+  padding: 0;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 60vw;
+
+  .image-wrapper {
+    background-color: white;
+    width: 60vw;
+    align-self: center;
+    //width: auto;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 1vw;
+    // grid-template-rows: 1fr 1fr;
+    // height: 20vh;
+
+    .image {
+      background-color: white;
+      // width: 10vw;
+      width: 50%;
+      height: 50%;
+      @media only screen and (max-width: 950px) {
+        //margin-left: -10vw;
+        width: 15vw;
+        height: 15vw;
+      }
+      @media only screen and (max-width: 550px) {
+        width: 40vw;
+        height: 40vw;
+        margin: 5px;
+      }
+    }
+    @media only screen and (max-width: 950px) {
+      width: 80vw;
+    }
+    @media only screen and (max-width: 550px) {
+      margin-top: 2vh;
+      width: 100vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  h1 {
+    color: #1b9cf7;
+    align-self: flex-start;
+    font-family: Raleway;
+    font-weight: 800;
+    letter-spacing: 1.5vw;
+    font-size: 6vw;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    @media only screen and (max-width: 950px) {
+      width: 100vw;
+      align-self: center;
+      font-size: 9vw;
+    }
+  }
+}

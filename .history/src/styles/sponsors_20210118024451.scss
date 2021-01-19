@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+.aa-container {
+  background-color: white;
+  max-width: 100%;
+  padding: 0;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 50vw;
+
+  .image-wrapper {
+    display: flex;
+    background-color: white;
+    width: 50vw;
+    margin-bottom: 5vh;
+    align-items: center;
+    img {
+      margin-right: 1vw;
+    }
+    .balsamiq,
+    .password {
+      width: 12vw;
+    }
+
+    .dots,
+    .wolfram,
+    .stairs {
+      width: 6vw;
+    }
+    @media only screen and (max-width: 950px) {
+      .balsamiq,
+      .password {
+        width: 25vw;
+      }
+
+      .dots,
+      .wolfram,
+      .stairs {
+        width: 10vw;
+      }
+    }
+    @media only screen and (max-width: 550px) {
+      display: flex;
+      flex-direction: column;
+      // margin-top: 2vh;
+      width: 100vw;
+      height: fit-content;
+    }
+  }
+
+  // }
+  h1 {
+    color: #1b9cf7;
+    align-self: flex-start;
+    font-family: Raleway;
+    font-weight: 800;
+    letter-spacing: 1.5vw;
+    font-size: 6vw;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    @media only screen and (max-width: 950px) {
+      width: 100vw;
+      align-self: center;
+      font-size: 9vw;
+    }
+  }
+}

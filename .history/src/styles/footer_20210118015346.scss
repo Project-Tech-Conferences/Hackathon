@@ -1,0 +1,136 @@
+.footer-container {
+  width: 100vw;
+  max-width: 100%;
+  background-color: black;
+  // margin-top: 10vh;
+
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Open Sans;
+
+  .ptc-container {
+    display: flex;
+    width: 65vw;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    // margin-right: 10vw;
+
+    .ptc-icon {
+      margin: 0;
+      padding: 0;
+    }
+    .ptc-title {
+      font-style: italic;
+      line-height: 3em;
+      margin-top: -3vh;
+    }
+    .ptc-motto {
+      margin: 0;
+      margin-top: 1.5vh;
+      padding: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .social-icons {
+      img {
+        height: 2rem;
+        height: 20px;
+        width: 20px;
+        padding-right: 27px;
+        padding-top: 12px;
+      }
+    }
+    .return-button {
+      display: flex;
+      height: 4.5vh;
+      align-items: center;
+      // justify-content: center;
+      width: 5vw;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: arial;
+      text-underline-position: unset;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 600ms;
+    }
+
+    .return-button:hover {
+      background-color: rgb(247, 72, 74);
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-container {
+    height: 40vh;
+    margin: 0;
+    height: fit-content;
+    .footer-align {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      .ptc-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .ptc-icon {
+          margin: 0;
+          padding: 0;
+        }
+        .ptc-title {
+          font-style: italic;
+          line-height: 1.5em;
+        }
+        .ptc-motto {
+          margin: 0;
+          padding-top: 3vh;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+        }
+
+        .social-icons a {
+          width: fit-content;
+          height: fit-content;
+          // margin-right: 2vw;
+          img {
+            // height: 2rem;
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+      .return-button {
+        // display: flex;
+        // flex-direction: row;
+        // height: 30vh;
+        // height: 1vh;
+        height: 6vh;
+        width: 60vw;
+
+        // align-items: center;
+        // justify-content: center;
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 5vh;
+        padding: 0;
+        transition: 600ms;
+      }
+    }
+  }
+}
