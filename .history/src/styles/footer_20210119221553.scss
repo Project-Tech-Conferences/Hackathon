@@ -3,12 +3,10 @@
   width: 100vw;
   max-width: 100%;
   background-color: black;
-  height: 40vh;
-  height: fit-content;
+  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 2vw;
   color: white;
   font-family: Open Sans;
   .ptc-container {
@@ -64,7 +62,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1250px) {
   .footer-container {
     margin: 0;
     height: fit-content;
