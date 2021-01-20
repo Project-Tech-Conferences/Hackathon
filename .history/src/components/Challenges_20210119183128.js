@@ -1,0 +1,64 @@
+import React from "react"
+import data from "../yourdata"
+
+const Challenges = () => {
+  return (
+    <div className="section" id="challenges">
+      <div className="container">
+        <div className="skills-container">
+          <h1>prizes</h1>
+          <div className="skills-grid">
+            <div className="challengeBox">
+              <p className="placing">first place</p>
+              <div className="wolframPrize">
+                <img
+                  src={data.prizes[0].img}
+                  className="wolframLogo"
+                  alt="src"
+                ></img>
+                <p className="prize">
+                  Wolfram <br />
+                  Award
+                </p>
+              </div>
+              <img
+                src={data.sponsors[1].img}
+                className="passwordLogo"
+                alt="src"
+              ></img>
+              <p className="prize">1PASSWORD AWARD $100 GIFT CARD</p>
+            </div>
+            <div className="challengeBox">
+              <p className="placing">second place</p>
+              <div className="wolframPrize">
+                <img
+                  src={data.prizes[0].img}
+                  className="wolframLogo"
+                  alt="src"
+                ></img>
+                <p className="prize">
+                  Wolfram <br /> Award
+                </p>
+              </div>
+              <p className="prize" style={{ margin: "0", justifySelf: "left" }}>
+                & $50 GIFT CARD
+              </p>
+            </div>
+            <div className="challengeBox">
+              <p className="placing">third place</p>
+              <div className="wolframPrize">
+                <img src={data.prizes[0].img} className="wolframLogo"></img>
+                <p className="prize">
+                  Wolfram
+                  <br /> Award
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Challenges
