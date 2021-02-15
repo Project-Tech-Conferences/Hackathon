@@ -3,17 +3,17 @@ import Fade from "react-reveal/Fade"
 import moment from "moment"
 
 const calculateTimeLeft = () => {
-  let hackDate = +new Date(`February 19, 2021 17:00:00`)
+  let hackDate = +new Date(`February 04, 2021 17:00:00`)
   let cur_time = +new Date()
   let difference = hackDate - cur_time
-  // console.log(difference)
+
 
   const addZero = equation => {
     return 0 < equation && equation < 10
   }
 
   var startDateTime = moment()
-  var endDateTime = moment("2021-02-18 17:00:00")
+  var endDateTime = moment("2021-02-04 12:00:00")
 
   var timeLeft = endDateTime.diff(startDateTime, "milliseconds", true)
 
@@ -49,6 +49,7 @@ const calculateTimeLeft = () => {
   var seconds = Math.floor(moment.duration(timeLeft).asSeconds())
 
   if (difference > 0) {
+    console.log("yes")
     timeLeft = {
       weeks: addZero(weeks) ? `0${weeks}` : weeks,
       days: addZero(days) ? `0${days}` : days,
@@ -57,6 +58,7 @@ const calculateTimeLeft = () => {
       seconds: addZero(seconds) ? `0${seconds}` : seconds,
     }
   }
+  console.log(timeLeft)
   return timeLeft
 }
 

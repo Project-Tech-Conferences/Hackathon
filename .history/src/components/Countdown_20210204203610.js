@@ -13,7 +13,7 @@ const calculateTimeLeft = () => {
   }
 
   var startDateTime = moment()
-  var endDateTime = moment("2021-02-18 17:00:00")
+  var endDateTime = moment("2021-02- 12:00:00")
 
   var timeLeft = endDateTime.diff(startDateTime, "milliseconds", true)
 

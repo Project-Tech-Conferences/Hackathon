@@ -90,7 +90,6 @@ function rowConflictCount(board) {
   }
   return numConflicts
 }
-iterativeRepair(4)
 
 function fisherYatesShuffle(arr) {
   for (var i = 0; i < arr.length; i++) {

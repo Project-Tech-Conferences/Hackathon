@@ -3,105 +3,6 @@ import Fade from "react-reveal/Fade"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function iterativeRepair(size) {
-  var solution = _repairLoop(size)
-  return solution
-}
-
-function _repairLoop(size) {
-  var numConflicts = Number.POSITIVE_INFINITY
-  var totalIterations = 0
-  var board
-  while (numConflicts > 0) {
-    var iterations = 0
-    board = generateRandomBoard(size)
-    while (iterations < 30) {
-      for (var i = 0; i < board.length; i++) minimizeConflicts(board, i)
-      numConflicts = totalConflicts(board)
-      iterations += board.length
-      if (numConflicts === 0) break
-    }
-    totalIterations += iterations
-  }
-  return board
-}
-
-function generateRandomBoard(size) {
-  var board = []
-  for (var i = 0; i < size; i++) board.push(i)
-  return fisherYatesShuffle(board)
-}
-
-function minimizeConflicts(board, col) {
-  var minConflicts = Number.POSITIVE_INFINITY
-  var originalRow = board[col]
-  var minRow
-  for (var row = 0; row < board.length; row++) {
-    board[col] = row
-    var conflicts = totalConflicts(board)
-    if (conflicts < minConflicts) {
-      minConflicts = conflicts
-      minRow = row
-    }
-  }
-  if (originalRow !== minRow) {
-  }
-  board[col] = minRow
-}
-
-function totalConflicts(board) {
-  return diagConflictCount(board) + rowConflictCount(board)
-}
-
-function diagConflictCount(board) {
-  // assumes all unique rows
-  var downDiags = []
-  while (downDiags.length < board.length * 2) downDiags.push(false)
-  var upDiags = downDiags.slice()
-  var numConflicts = 0
-  for (var i = 0; i < board.length; i++) {
-    var downDiag = i - board[i] + (board.length - 1)
-    if (!downDiags[downDiag]) {
-      downDiags[downDiag] = true
-    } else {
-      numConflicts++
-    }
-
-    var upDiag = i + board[i]
-    if (!upDiags[upDiag]) {
-      upDiags[upDiag] = true
-    } else {
-      numConflicts++
-    }
-  }
-  return numConflicts
-}
-
-function rowConflictCount(board) {
-  var row = []
-  var numConflicts = 0
-  while (row.length < board.length) row.push(false)
-  for (var i = 0; i < board.length; i++) {
-    if (row[board[i]]) {
-      numConflicts++
-    } else {
-      row[board[i]] = true
-    }
-  }
-  return numConflicts
-}
-iterativeRepair(4)
-
-function fisherYatesShuffle(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    var j = Math.floor(Math.random() * (arr.length - i) + i)
-    var temp = arr[i]
-    arr[i] = arr[j]
-    arr[j] = temp
-  }
-  return arr
-}
-
 const Schedule = () => {
   return (
     <div className="section" id="schedule">
@@ -133,16 +34,21 @@ const Schedule = () => {
               <div className="saturday-schedule">
                 <div className="saturday-time">8:30 am</div>
                 <div>Day opening ceremony</div>
-
+                {/* <div className="saturday-time">8:00 am</div>
+                <div>Social</div> */}
+                {/* <div className="saturday-time">10:00 am</div>
+                <div>Guest speaker #2</div> */}
                 <div className="saturday-time">11:00 am</div>
-                <div>Program Management - Microsoft</div>
+                <div>Product/Program Management @ Microsoft</div>
                 <div className="saturday-time">12:00 pm</div>
                 <div>Networking session</div>
-                <div className="saturday-time">1:00 pm</div>
+                <div className="saturday-time">1:00-2:00 pm</div>
                 <div>Lunch</div>
-                <div className="saturday-time">2:00 pm</div>
-                <div>Women in Tech - Google</div>
-                <div className="saturday-time">3:00 pm</div>
+                <div className="saturday-time">2:00-2:45 pm</div>
+                <div>
+                  Navigating through career in tech as a women at Google
+                </div>
+                <div className="saturday-time">3:00-4:00 pm</div>
                 <div>LinkedIn Networking Workshop</div>
                 <div className="saturday-time">7:00 pm</div>
                 <div>Social</div>

@@ -13,7 +13,7 @@ const calculateTimeLeft = () => {
   }
 
   var startDateTime = moment()
-  var endDateTime = moment("2021-02-18 17:00:00")
+  var endDateTime = moment("2021-02-04 12:00:00")
 
   var timeLeft = endDateTime.diff(startDateTime, "milliseconds", true)
 
@@ -49,6 +49,7 @@ const calculateTimeLeft = () => {
   var seconds = Math.floor(moment.duration(timeLeft).asSeconds())
 
   if (difference > 0) {
+    console.log()
     timeLeft = {
       weeks: addZero(weeks) ? `0${weeks}` : weeks,
       days: addZero(days) ? `0${days}` : days,
@@ -57,6 +58,7 @@ const calculateTimeLeft = () => {
       seconds: addZero(seconds) ? `0${seconds}` : seconds,
     }
   }
+  console.log(timeLeft)
   return timeLeft
 }
 
