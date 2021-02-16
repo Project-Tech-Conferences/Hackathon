@@ -13,11 +13,9 @@ const calculateTimeLeft = () => {
   }
 
   var startDateTime = moment()
-  var endDateTime = moment("2021-02-19 17:00:00")
+  var endDateTime = moment("2021-02-18 17:00:00")
 
   var timeLeft = endDateTime.diff(startDateTime, "milliseconds", true)
-
-  var years = Math.floor(moment.duration(timeLeft).asYears())
 
   endDateTime = endDateTime.subtract(years, "years")
   timeLeft = endDateTime.diff(startDateTime, "milliseconds", true)

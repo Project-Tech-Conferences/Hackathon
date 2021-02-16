@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+
 const Schedule = () => {
   return (
     <div className="section" id="schedule">
