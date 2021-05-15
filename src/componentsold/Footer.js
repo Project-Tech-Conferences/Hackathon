@@ -1,6 +1,6 @@
-import React from "react";
-import Fade from "react-reveal/Fade";
-import data from "../yourdata";
+import React from "react"
+import Fade from "react-reveal/Fade"
+import data from "../yourdata"
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="ptc-title">Project Tech Conferences</div>
               <div className="ptc-motto">stay in the loop</div>
               <div className="social-icons">
-                {data.social.map((socialLink) => (
+                {data.social.map(socialLink => (
                   <a
                     href={socialLink.url}
                     target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,30 +1,33 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
+// import "../styles/header.css";
+// client\src\styles\header.css
 
 const Header = () => {
   return (
     <div className="section" id="home">
-      <div className="container">
+      <ul>
+        <li>
+          <a href="#">Challenges</a>
+        </li>
+        <li>
+          <a href="#">Rules</a>
+        </li>
+        <li>
+          <a href="#">Leaderboard</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      {/* <div className="container">
         <div className="header-wrapper">
-          <Fade bottom cascade>
-            {
-              <div className="heading-wrapper">
-                <h1 className="title">PTC HACKS</h1>
-                <h3 className="description">
-                  hackathon for highschool students
-                </h3>
-                <h2 className="date">February 19th-21st</h2>
-                <a
-                  href={"https://projecttc.typeform.com/to/myGJeoEM"}
-                  className="primary-btn"
-                >
-                  Apply
-                </a>
-              </div>
-            }
-          </Fade>
+          <div className="menu">
+            <h1>Challenges</h1>
+            <h1>Rules</h1>
+            <h1>Leaderboard</h1>
+          </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
