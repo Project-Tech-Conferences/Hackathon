@@ -1,5 +1,5 @@
 import React from "react"
-// import "../styles/header.css";
+import "../styles/nav.scss"
 // client\src\styles\header.css
 
 const Header = () => {
@@ -15,19 +15,7 @@ const Header = () => {
         <li>
           <a href="#">Leaderboard</a>
         </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
       </ul>
-      {/* <div className="container">
-        <div className="header-wrapper">
-          <div className="menu">
-            <h1>Challenges</h1>
-            <h1>Rules</h1>
-            <h1>Leaderboard</h1>
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }

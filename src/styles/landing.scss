@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+
+.landingContainer {
+  width: 40%;
+  height: 60vh;
+  flex-direction: column;
+  font-family: Raleway;
+  margin-bottom: 20vw;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+  }
+  .ptcMedia {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutTitle {
+    color: #ff424f;
+  }
+  .whatTitle {
+    color: #ff6830;
+  }
+  .learningTitle {
+    color: #ff8b0f;
+  }
+  .getStartedTitle {
+    color: #92af63;
+  }
+  .ptcMediaTitle {
+    color: #1b9cf7;
+  }
+}
